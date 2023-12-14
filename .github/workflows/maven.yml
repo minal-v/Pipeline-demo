@@ -30,6 +30,6 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name: Execute Jar File
-      run: sudo kill -9 `sudo lsof -t -i:8080` & sudo java -jar /home/ec2-user/actions-runner/_work/CI-CD-repository/CI-CD-repository/target/demo-0.0.1-SNAPSHOT.jar &
+      run: sudo kill -9 `sudo lsof -t -i:8080` & sudo java -jar /home/ec2-user/_work/Pipeline-demo/Pipeline-demo/target/demo-0.0.1-SNAPSHOT.jar &
 
   
